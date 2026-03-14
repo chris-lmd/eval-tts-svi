@@ -1,6 +1,6 @@
 # Évaluation TTS pour SVI
 
-Notebook Google Colab pour évaluer la qualité des voix françaises **Kokoro TTS** et **Piper TTS** sur des phrases types de SVI téléphonique.
+Notebook Google Colab pour évaluer la qualité de 4 moteurs TTS open source en français sur des phrases types de SVI téléphonique.
 
 ## Utilisation
 
@@ -18,7 +18,9 @@ Les phrases types d'un SVI (accueil, relance, confirmation, transfert, au revoir
 
 ## Moteurs comparés
 
-| Moteur | Params | GPU requis | Licence |
-|--------|--------|-----------|---------|
-| **Kokoro** | 82M | Oui (Colab GPU gratuit suffit) | Apache 2.0 |
-| **Piper** | ~15M | Non (CPU) | MIT |
+| Moteur | Params | GPU requis | Licence | Notes |
+|--------|--------|-----------|---------|-------|
+| **Kokoro** | 82M | Oui (Colab GPU gratuit suffit) | Apache 2.0 | Ultra-rapide |
+| **Piper** | ~15M | Non (CPU) | MIT | ONNX, très léger |
+| **Kyutai TTS** | 1.6B | Oui | CC-BY 4.0 | Streaming natif, FR natif |
+| **CosyVoice 2** | 0.5B | Oui | Apache 2.0 | Zero-shot (clone de voix) |
